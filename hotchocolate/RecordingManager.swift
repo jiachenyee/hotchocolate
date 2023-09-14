@@ -132,17 +132,19 @@ class RecordingManager: NSObject, ObservableObject {
             "--preset", "Fast 1080p30"
         ]
         
-        do {
-            try process.run()
-            process.waitUntilExit()
-            
-            if process.terminationStatus == 0 {
-                print("HandBrakeCLI ran successfully.")
-            } else {
-                print("HandBrakeCLI failed with exit code \(process.terminationStatus).")
+        DispatchQueue.global(qos: .utility).async {
+            do {
+                try process.run()
+                process.waitUntilExit()
+                
+                if process.terminationStatus == 0 {
+                    print("HandBrakeCLI ran successfully.")
+                } else {
+                    print("HandBrakeCLI failed with exit code \(process.terminationStatus).")
+                }
+            } catch {
+                print("Failed to run HandBrakeCLI: \(error)")
             }
-        } catch {
-            print("Failed to run HandBrakeCLI: \(error)")
         }
     }
 

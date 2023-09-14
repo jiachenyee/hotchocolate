@@ -20,6 +20,7 @@
 		3261C2962AB3151E005FD314 /* PresentationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261C2952AB3151E005FD314 /* PresentationState.swift */; };
 		3261C2992AB31584005FD314 /* CaptureDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261C2982AB31584005FD314 /* CaptureDevice.swift */; };
 		3261C29B2AB3171A005FD314 /* RecordingSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261C29A2AB3171A005FD314 /* RecordingSessionView.swift */; };
+		3261C29D2AB33DF8005FD314 /* LogValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261C29C2AB33DF8005FD314 /* LogValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		3261C2952AB3151E005FD314 /* PresentationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationState.swift; sourceTree = "<group>"; };
 		3261C2982AB31584005FD314 /* CaptureDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureDevice.swift; sourceTree = "<group>"; };
 		3261C29A2AB3171A005FD314 /* RecordingSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingSessionView.swift; sourceTree = "<group>"; };
+		3261C29C2AB33DF8005FD314 /* LogValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			children = (
 				3261C2952AB3151E005FD314 /* PresentationState.swift */,
 				3261C2982AB31584005FD314 /* CaptureDevice.swift */,
+				3261C29C2AB33DF8005FD314 /* LogValue.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3261C29D2AB33DF8005FD314 /* LogValue.swift in Sources */,
 				3261C2782AB2DBBB005FD314 /* ContentView.swift in Sources */,
 				3261C2892AB2E7EF005FD314 /* OnboardingRow.swift in Sources */,
 				3261C2992AB31584005FD314 /* CaptureDevice.swift in Sources */,

@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct hotchocolateApp: App {
+    
+    @StateObject var recordingManager = RecordingManager()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(recordingManager: recordingManager)
+        }
+        
+        WindowGroup(id: "presentation-window") {
+            PresentationView(recordingManager: recordingManager)
         }
     }
 }

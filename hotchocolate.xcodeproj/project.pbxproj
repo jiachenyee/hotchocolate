@@ -11,6 +11,15 @@
 		3261C2782AB2DBBB005FD314 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261C2772AB2DBBB005FD314 /* ContentView.swift */; };
 		3261C27A2AB2DBBC005FD314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3261C2792AB2DBBC005FD314 /* Assets.xcassets */; };
 		3261C27D2AB2DBBC005FD314 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3261C27C2AB2DBBC005FD314 /* Preview Assets.xcassets */; };
+		3261C2852AB2DF44005FD314 /* RecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261C2842AB2DF44005FD314 /* RecordingManager.swift */; };
+		3261C2892AB2E7EF005FD314 /* OnboardingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261C2882AB2E7EF005FD314 /* OnboardingRow.swift */; };
+		3261C28B2AB2FB98005FD314 /* OnboardingLoopbackDiagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261C28A2AB2FB98005FD314 /* OnboardingLoopbackDiagram.swift */; };
+		3261C28D2AB30017005FD314 /* PresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261C28C2AB30017005FD314 /* PresentationView.swift */; };
+		3261C28F2AB3031C005FD314 /* CapturePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261C28E2AB3031C005FD314 /* CapturePreview.swift */; };
+		3261C2912AB30A5F005FD314 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261C2902AB30A5F005FD314 /* OnboardingView.swift */; };
+		3261C2962AB3151E005FD314 /* PresentationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261C2952AB3151E005FD314 /* PresentationState.swift */; };
+		3261C2992AB31584005FD314 /* CaptureDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261C2982AB31584005FD314 /* CaptureDevice.swift */; };
+		3261C29B2AB3171A005FD314 /* RecordingSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261C29A2AB3171A005FD314 /* RecordingSessionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +29,15 @@
 		3261C2792AB2DBBC005FD314 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3261C27C2AB2DBBC005FD314 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3261C27E2AB2DBBC005FD314 /* hotchocolate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = hotchocolate.entitlements; sourceTree = "<group>"; };
+		3261C2842AB2DF44005FD314 /* RecordingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingManager.swift; sourceTree = "<group>"; };
+		3261C2882AB2E7EF005FD314 /* OnboardingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRow.swift; sourceTree = "<group>"; };
+		3261C28A2AB2FB98005FD314 /* OnboardingLoopbackDiagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingLoopbackDiagram.swift; sourceTree = "<group>"; };
+		3261C28C2AB30017005FD314 /* PresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationView.swift; sourceTree = "<group>"; };
+		3261C28E2AB3031C005FD314 /* CapturePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturePreview.swift; sourceTree = "<group>"; };
+		3261C2902AB30A5F005FD314 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		3261C2952AB3151E005FD314 /* PresentationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationState.swift; sourceTree = "<group>"; };
+		3261C2982AB31584005FD314 /* CaptureDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureDevice.swift; sourceTree = "<group>"; };
+		3261C29A2AB3171A005FD314 /* RecordingSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingSessionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +71,9 @@
 			isa = PBXGroup;
 			children = (
 				3261C2752AB2DBBB005FD314 /* hotchocolateApp.swift */,
-				3261C2772AB2DBBB005FD314 /* ContentView.swift */,
+				3261C2922AB314FC005FD314 /* Views */,
+				3261C2972AB31528005FD314 /* Models */,
+				3261C2842AB2DF44005FD314 /* RecordingManager.swift */,
 				3261C2792AB2DBBC005FD314 /* Assets.xcassets */,
 				3261C27E2AB2DBBC005FD314 /* hotchocolate.entitlements */,
 				3261C27B2AB2DBBC005FD314 /* Preview Content */,
@@ -67,6 +87,45 @@
 				3261C27C2AB2DBBC005FD314 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3261C2922AB314FC005FD314 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3261C2772AB2DBBB005FD314 /* ContentView.swift */,
+				3261C29A2AB3171A005FD314 /* RecordingSessionView.swift */,
+				3261C2932AB31505005FD314 /* Set Up */,
+				3261C2942AB3150F005FD314 /* Presentation */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3261C2932AB31505005FD314 /* Set Up */ = {
+			isa = PBXGroup;
+			children = (
+				3261C2902AB30A5F005FD314 /* OnboardingView.swift */,
+				3261C28A2AB2FB98005FD314 /* OnboardingLoopbackDiagram.swift */,
+				3261C2882AB2E7EF005FD314 /* OnboardingRow.swift */,
+			);
+			path = "Set Up";
+			sourceTree = "<group>";
+		};
+		3261C2942AB3150F005FD314 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3261C28E2AB3031C005FD314 /* CapturePreview.swift */,
+				3261C28C2AB30017005FD314 /* PresentationView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3261C2972AB31528005FD314 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3261C2952AB3151E005FD314 /* PresentationState.swift */,
+				3261C2982AB31584005FD314 /* CaptureDevice.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +199,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3261C2782AB2DBBB005FD314 /* ContentView.swift in Sources */,
+				3261C2892AB2E7EF005FD314 /* OnboardingRow.swift in Sources */,
+				3261C2992AB31584005FD314 /* CaptureDevice.swift in Sources */,
+				3261C28F2AB3031C005FD314 /* CapturePreview.swift in Sources */,
+				3261C28D2AB30017005FD314 /* PresentationView.swift in Sources */,
+				3261C29B2AB3171A005FD314 /* RecordingSessionView.swift in Sources */,
+				3261C2962AB3151E005FD314 /* PresentationState.swift in Sources */,
+				3261C2852AB2DF44005FD314 /* RecordingManager.swift in Sources */,
+				3261C2912AB30A5F005FD314 /* OnboardingView.swift in Sources */,
 				3261C2762AB2DBBB005FD314 /* hotchocolateApp.swift in Sources */,
+				3261C28B2AB2FB98005FD314 /* OnboardingLoopbackDiagram.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,11 +347,14 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Connect to Capture Card";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Connect to Microphone";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.jiachen.hotchocolate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -306,11 +377,14 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Connect to Capture Card";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Connect to Microphone";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.jiachen.hotchocolate;
 				PRODUCT_NAME = "$(TARGET_NAME)";

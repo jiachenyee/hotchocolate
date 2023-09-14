@@ -31,6 +31,15 @@ class RecordingManager: NSObject, ObservableObject {
         super.init()
         updateCamerasList()
         updateMicrophonesList()
+
+        if cameras.contains(where: { $0.id == UserDefaults.standard.string(forKey: "cameraId") }) {
+            selectedCameraID = UserDefaults.standard.string(forKey: "cameraId")!
+        }
+        
+        if microphones.contains(where: { $0.id == UserDefaults.standard.string(forKey: "micId") }) {
+            selectedCameraID = UserDefaults.standard.string(forKey: "micId")!
+        }
+        
         requestAuthorization()
     }
     
@@ -59,7 +68,7 @@ class RecordingManager: NSObject, ObservableObject {
                                                    mediaType: .video,
                                                    position: .unspecified)
         .devices
-        .map { CaptureDevice($0) }
+        .map(CaptureDevice.init)
     }
     
     func updateMicrophonesList() {
@@ -67,7 +76,7 @@ class RecordingManager: NSObject, ObservableObject {
                                                        mediaType: .audio,
                                                        position: .unspecified)
         .devices
-        .map { CaptureDevice($0) }
+        .map(CaptureDevice.init)
     }
     
     func refreshInputDevices() {
@@ -76,6 +85,10 @@ class RecordingManager: NSObject, ObservableObject {
     }
     
     func start(camera: AVCaptureDevice, microphone: AVCaptureDevice) {
+        
+        UserDefaults.standard.set(camera.uniqueID, forKey: "cameraId")
+        UserDefaults.standard.set(microphone.uniqueID, forKey: "micId")
+        
         session = AVCaptureSession()
         
         do {
